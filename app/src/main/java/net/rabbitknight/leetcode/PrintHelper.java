@@ -1,13 +1,8 @@
 package net.rabbitknight.leetcode;
 
-public class PrintHelper {
+import net.rabbitknight.leetcode.structure.ListNode;
 
-    public static void println(String msg) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("--- ")
-                .append(msg);
-        System.out.println(sb.toString());
-    }
+public class PrintHelper {
 
     public static void println(Object... msg) {
         StringBuilder sb = new StringBuilder();
@@ -16,6 +11,14 @@ public class PrintHelper {
             sb.append(txt).append(" ");
         }
         System.out.println(sb.toString());
+    }
+
+    public static void print(ListNode node) {
+        ListNode current = node;
+        while (current != null) {
+            PrintHelper.println(current.val);
+            current = current.next;
+        }
     }
 
 }

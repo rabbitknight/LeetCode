@@ -1,6 +1,7 @@
 package net.rabbitknight.leetcode.core;
 
 import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.structure.ListNode;
 
 /**
  * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
@@ -50,27 +51,9 @@ public class Sub019 {
 
 //        print(head);
         head = sub.removeNthFromEnd(head, 2);
-        print(head);
+        PrintHelper.print(head);
     }
 
-    private static void print(ListNode node) {
-        ListNode current = node;
-        while (current != null) {
-            PrintHelper.println(current.val);
-            current = current.next;
-        }
 
-    }
 
-    /**
-     * Definition of ListNode
-     */
-    public static class ListNode {
-        public ListNode(int x) {
-            this.val = x;
-        }
-
-        public int val;
-        public ListNode next;
-    }
 }
