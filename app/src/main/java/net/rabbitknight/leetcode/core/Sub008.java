@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -77,7 +77,7 @@ public class Sub008 {
 
     public static void main(String[] args) {
         Sub008 sub = new Sub008();
-        PrintHelper.println("" + sub.myAtoi("-2147483649"));
-        PrintHelper.println(Integer.MIN_VALUE);
+        Printer.println("" + sub.myAtoi("-2147483649"));
+        Printer.println(Integer.MIN_VALUE);
     }
 }

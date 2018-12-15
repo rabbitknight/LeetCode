@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 /**
  * 编写一个函数来查找字符串数组中的最长公共前缀。
@@ -34,6 +34,6 @@ public class Sub014 {
     public static void main(String[] args) {
         Sub014 sub = new Sub014();
         String[] input = new String[]{"asa", "as"};
-        PrintHelper.println(sub.longestCommonPrefix(input));
+        Printer.println(sub.longestCommonPrefix(input));
     }
 }

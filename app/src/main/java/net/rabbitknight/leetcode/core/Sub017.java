@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +58,6 @@ public class Sub017 {
 
     public static void main(String[] args) {
         Sub017 sub = new Sub017();
-        PrintHelper.println(sub.letterCombinations("23"));
+        Printer.println(sub.letterCombinations("23"));
     }
 }

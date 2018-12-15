@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 public class Sub009 {
 
@@ -31,9 +31,9 @@ public class Sub009 {
 
 
     public static void main(String[] args) {
-        PrintHelper.println(isPalindrome(110));
-        PrintHelper.println(isPalindrome(1));
-        PrintHelper.println(isPalindrome(01));
-        PrintHelper.println(isPalindrome(1234321));
+        Printer.println(isPalindrome(110));
+        Printer.println(isPalindrome(1));
+        Printer.println(isPalindrome(01));
+        Printer.println(isPalindrome(1234321));
     }
 }

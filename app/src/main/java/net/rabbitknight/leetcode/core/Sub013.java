@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -139,6 +139,6 @@ public class Sub013 {
 
     public static void main(String[] args) {
         Sub013 sub = new Sub013();
-        PrintHelper.println(sub.romanToInt("III"));
+        Printer.println(sub.romanToInt("III"));
     }
 }

@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -57,7 +57,7 @@ public class Sub018 {
 //        int[] input = new int[]{1, 0, -1, 0, -2, 2};
 //        int[] input = new int[]{0, 0, 0, 0, 0, 0};
         int[] input = new int[]{-3, -1, 0, 2, 4, 5};
-        PrintHelper.println(sub.fourSum(input, 0));
+        Printer.println(sub.fourSum(input, 0));
 
     }
 }

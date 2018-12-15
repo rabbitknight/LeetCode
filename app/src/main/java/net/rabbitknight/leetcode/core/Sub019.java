@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 import net.rabbitknight.leetcode.structure.ListNode;
 
 /**
@@ -51,7 +51,7 @@ public class Sub019 {
 
 //        print(head);
         head = sub.removeNthFromEnd(head, 2);
-        PrintHelper.print(head);
+        Printer.print(head);
     }
 
 

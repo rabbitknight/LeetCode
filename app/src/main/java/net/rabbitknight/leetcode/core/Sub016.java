@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 import java.util.Arrays;
 
@@ -37,6 +37,6 @@ public class Sub016 {
     public static void main(String[] args) {
         Sub016 sub = new Sub016();
         int[] input = new int[]{-1, 2, 1, -4};
-        PrintHelper.println(sub.threeSumClosest(input, 1));
+        Printer.println(sub.threeSumClosest(input, 1));
     }
 }

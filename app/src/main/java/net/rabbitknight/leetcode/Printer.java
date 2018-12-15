@@ -2,7 +2,7 @@ package net.rabbitknight.leetcode;
 
 import net.rabbitknight.leetcode.structure.ListNode;
 
-public class PrintHelper {
+public class Printer {
 
     public static void println(Object... msg) {
         StringBuilder sb = new StringBuilder();
@@ -16,7 +16,7 @@ public class PrintHelper {
     public static void print(ListNode node) {
         ListNode current = node;
         while (current != null) {
-            PrintHelper.println(current.val);
+            Printer.println(current.val);
             current = current.next;
         }
     }

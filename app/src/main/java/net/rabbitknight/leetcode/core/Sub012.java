@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 public class Sub012 {
 
@@ -28,6 +28,6 @@ public class Sub012 {
 
     public static void main(String[] args) {
         Sub012 sub = new Sub012();
-        PrintHelper.println(sub.intToRoman(1994));
+        Printer.println(sub.intToRoman(1994));
     }
 }

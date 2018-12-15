@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 public class Sub011 {
     // TODO: 2018/12/9 暴力法 待优化
@@ -20,6 +20,6 @@ public class Sub011 {
     public static void main(String[] args) {
         Sub011 sub = new Sub011();
         int[] input = new int[]{1,1};
-        PrintHelper.println(sub.maxArea(input));
+        Printer.println(sub.maxArea(input));
     }
 }

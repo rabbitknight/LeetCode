@@ -1,6 +1,6 @@
 package net.rabbitknight.leetcode.core;
 
-import net.rabbitknight.leetcode.PrintHelper;
+import net.rabbitknight.leetcode.Printer;
 
 import java.util.Stack;
 
@@ -51,7 +51,7 @@ public class Sub020 {
 
     public static void main(String[] args) {
         Sub020 sub = new Sub020();
-        PrintHelper.println(sub.isValid("["));
+        Printer.println(sub.isValid("["));
 
     }
 }
