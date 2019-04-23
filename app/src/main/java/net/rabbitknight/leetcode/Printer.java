@@ -3,6 +3,8 @@ package net.rabbitknight.leetcode;
 import net.rabbitknight.leetcode.structure.ListNode;
 
 public class Printer {
+    private static long begin = 0L;
+    private static long end = 0L;
 
     public static void println(Object... msg) {
         StringBuilder sb = new StringBuilder();
@@ -21,4 +23,12 @@ public class Printer {
         }
     }
 
+    public static void start() {
+        begin = System.currentTimeMillis();
+    }
+
+    public static void end() {
+        end = System.currentTimeMillis();
+        println("start = ["+begin+"], end = ["+end+"], cost = ["+(end-begin)+"ms]");
+    }
 }
