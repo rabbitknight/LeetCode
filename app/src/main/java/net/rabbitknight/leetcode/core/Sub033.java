@@ -48,7 +48,9 @@ public class Sub033 {
                 } else {
                     return rst;
                 }
-            } else {
+            }
+            // 那么右边肯定是规则的
+            else {
                 int rst = search(nums, target, middle, r);
                 if (-1 == rst) {
                     r = middle - 1;
