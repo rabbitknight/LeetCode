@@ -9,6 +9,7 @@ package net.rabbitknight.leetcode.core;
  * 3.     21
  * 4.     1211
  * 5.     111221
+ * 6.     312211
  * 1 被读作  "one 1"  ("一个一") , 即 11。
  * 11 被读作 "two 1s" ("两个一"）, 即 21。
  * 21 被读作 "one 2",  "one 1" （"一个二" ,  "一个一") , 即 1211。
@@ -31,24 +32,9 @@ package net.rabbitknight.leetcode.core;
 public class Sub038 {
     public String countAndSay(int n) {
         StringBuilder sb = new StringBuilder();
-        short[] say = new short[1024];
-        int pointer = 1;
-
-        say[0] = 1;
-        for (int i = 1; i < n; i++) {
-            int l = 0;  // 左指针
-            int r = 0;  // 右指针
-            while (l < pointer) {
-                if (say[l] == say[r]) {
-                    r++;
-                } else {
-                    l = r;
-                }
-            }
-
+        for (int i = 0; i < n; i++) {
 
         }
-
         return sb.toString();
 
     }
