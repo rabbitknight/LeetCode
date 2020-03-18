@@ -55,6 +55,14 @@ import net.rabbitknight.leetcode.Printer;
  * </cost>
  */
 public class Sub036 {
+    /**
+     * 1. 使用仨数组来缓存整张表的信息，每个INT代表一行、一列、一个九宫格
+     * 2. 使用Bitmap思想，使用一个INT值来判断是否有重复元素出现
+     * 3. 2维数组依次遍历
+     *
+     * @param board
+     * @return
+     */
     public boolean isValidSudoku(char[][] board) {
         int[] cFlag = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0};
         int[] rFlag = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -63,7 +71,7 @@ public class Sub036 {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
                 char ch = board[i][j];  // 获取char
-                int box = (j / 3) * 3 + i / 3;
+                int box = (j / 3) * 3 + i / 3;  // 计算是第几个格子
                 if (ch == '.') {
                     continue;
                 }
